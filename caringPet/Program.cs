@@ -18,7 +18,7 @@ class VirtualPet
         Console.WriteLine("\nChoose a pet type:");
         Console.WriteLine("1. Cat");
         Console.WriteLine("2. Dog");
-        Console.WriteLine("3. Rabbit");
+        Console.WriteLine("3. Parrot");
         Console.Write("Enter your choice (1-3): ");
 
         int typeChoice;
@@ -31,7 +31,7 @@ class VirtualPet
         {
             1 => "Cat",
             2 => "Dog",
-            3 => "Rabbit",
+            3 => "Parrot",
             _ => "Unknown"
         };
 
