@@ -76,7 +76,7 @@ class VirtualPet
                     break;
 
                 case 2: // Play with pet
-                    if (hunger >= 2)
+                    if (hunger >= 7)
                     {
                         Console.WriteLine($"\n{petName} is too hungry to play right now. Try feeding first.");
                     }
@@ -129,24 +129,24 @@ class VirtualPet
                     break;
             }
 
-            // Time-based changes
-            //if (isRunning)
-            //{
-            //    // Hunger increases over time (maximum 10)
-            //    hunger += 1;
-            //    if (hunger > 10) hunger = 10;
+            //Time - based changes
+            if (isRunning)
+            {
+                // Hunger increases over time (maximum 10)
+                hunger += 1;
+                if (hunger > 10) hunger = 10;
 
-            //    // Happiness decreases over time (minimum 1)
-            //    happiness -= 1;
-            //    if (happiness < 1) happiness = 1;
+                // Happiness decreases over time (minimum 1)
+                happiness -= 1;
+                if (happiness < 1) happiness = 1;
 
-            //    // Health check
-            //    if (hunger >= 8 || happiness <= 3)
-            //    {
-            //        health -= 1;
-            //        if (health < 1) health = 1;
-            //    }
-            //}
+                // Health check
+                if (hunger >= 8 || happiness <= 3)
+                {
+                    health -= 1;
+                    if (health < 1) health = 1;
+                }
+            }
         }
     }
 
